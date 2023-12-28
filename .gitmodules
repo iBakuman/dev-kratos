@@ -1,0 +1,9 @@
+[submodule "kratos-selfservice-ui-node"]
+	path = kratos-selfservice-ui-node
+	url = git@github.com:iBakuman/kratos-selfservice-ui-node.git
+[submodule "kratos"]
+	path = kratos
+	url = git@github.com:iBakuman/kratos.git
+[submodule "kratos-admin-ui"]
+	path = kratos-admin-ui
+	url = git@github.com:iBakuman/kratos-admin-ui.git
