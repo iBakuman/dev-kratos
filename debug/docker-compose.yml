@@ -49,7 +49,7 @@ services:
     ports:
       - "4433:4433" # public
       - "4434:4434" # admin
-      - "9999:40000"
+      - "9000:40000"
     security_opt:
       - apparmor=unconfined
     cap_add:
