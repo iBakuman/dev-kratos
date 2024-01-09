@@ -43,7 +43,9 @@ services:
       context: ../kratos
       dockerfile: ./.docker/Dockerfile-debug
       args:
-        - source_dir=${PWD}/../kratos
+        # do not run docker-compose from the debug folder.
+        # instead, run `make r-start` from the root folder of the project(dev-kratos).
+        - source_dir=${PWD}/kratos
     depends_on:
       - kratos-migrate
     ports:
@@ -61,7 +63,7 @@ services:
         target: /etc/config/kratos/
       - type: bind
         source: ../kratos
-        target: ${PWD}/../kratos
+        target: ${PWD}/kratos
         read_only: false
     networks:
       - intranet
